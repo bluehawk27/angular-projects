@@ -1,82 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Angular Solutions</title>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-
-  <body>
-
-    <div class="container">
-
-      <!-- The justified navigation menu is meant for single line per list item.
-           Multiple lines will require custom code not provided by Bootstrap. -->
-      <div class="masthead">
-        <h3 class="text-muted">Angular Solutions</h3>
-        <nav>
-          <ul class="nav nav-justified">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-lg-12">
-          <h2>Services</h2>
-          <div class="row service">
-            <div class="col-md-2">
-              <img src="https://angularjs.org/img/angular-u-logo.png">
-            </div>
-            <div class="col-md-10">
-              <h3>Hardware Repair</h3>
-              <p>Vivamus faucibus elit eu justo accumsan, sed dapibus nisl volutpat. Suspendisse vel velit non ante fermentum facilisis at id lacus. Maecenas commodo est vitae varius efficitur. Integer lobortis, urna at sollicitudin aliquet, dui dolor tempus leo, condimentum pharetra ligula sapien ac nisi. Phasellus venenatis, mi sit amet rutrum tempor, dui dui mattis neque, in ullamcorper nisi felis vitae dolor. Nullam fringilla mauris eu luctus convallis. Pellentesque vitae arcu nunc. Nullam nunc est, facilisis nec vestibulum nec, fringilla vitae diam. Donec accumsan venenatis sem at finibus. Vestibulum eu mauris ornare, mollis nisl quis, convallis nisi. Sed aliquet posuere enim non rutrum. Nunc et mollis velit. In ullamcorper, neque nec blandit viverra, turpis urna tempor ex, sed rutrum ipsum lectus quis quam. Praesent quam elit, porttitor sed nibh sed, gravida lacinia nibh.</p>
-              <a href="contact.html" class="btn btn-primary">Contact Us</a>
-            </div>
-          </div>
-
-           <div class="row service">
-            <div class="col-md-2">
-              <img src="https://angularjs.org/img/angular-u-logo.png">
-            </div>
-            <div class="col-md-10">
-              <h3>Hardware Repair</h3>
-              <p>Vivamus faucibus elit eu justo accumsan, sed dapibus nisl volutpat. Suspendisse vel velit non ante fermentum facilisis at id lacus. Maecenas commodo est vitae varius efficitur. Integer lobortis, urna at sollicitudin aliquet, dui dolor tempus leo, condimentum pharetra ligula sapien ac nisi. Phasellus venenatis, mi sit amet rutrum tempor, dui dui mattis neque, in ullamcorper nisi felis vitae dolor. Nullam fringilla mauris eu luctus convallis. Pellentesque vitae arcu nunc. Nullam nunc est, facilisis nec vestibulum nec, fringilla vitae diam. Donec accumsan venenatis sem at finibus. Vestibulum eu mauris ornare, mollis nisl quis, convallis nisi. Sed aliquet posuere enim non rutrum. Nunc et mollis velit. In ullamcorper, neque nec blandit viverra, turpis urna tempor ex, sed rutrum ipsum lectus quis quam. Praesent quam elit, porttitor sed nibh sed, gravida lacinia nibh.</p>
-              <a href="contact.html" class="btn btn-primary">Contact Us</a>
-            </div>
-          </div>
-
-           <div class="row service">
-            <div class="col-md-2">
-              <img src="https://angularjs.org/img/angular-u-logo.png">
-            </div>
-            <div class="col-md-10">
-              <h3>Hardware Repair</h3>
-              <p>Vivamus faucibus elit eu justo accumsan, sed dapibus nisl volutpat. Suspendisse vel velit non ante fermentum facilisis at id lacus. Maecenas commodo est vitae varius efficitur. Integer lobortis, urna at sollicitudin aliquet, dui dolor tempus leo, condimentum pharetra ligula sapien ac nisi. Phasellus venenatis, mi sit amet rutrum tempor, dui dui mattis neque, in ullamcorper nisi felis vitae dolor. Nullam fringilla mauris eu luctus convallis. Pellentesque vitae arcu nunc. Nullam nunc est, facilisis nec vestibulum nec, fringilla vitae diam. Donec accumsan venenatis sem at finibus. Vestibulum eu mauris ornare, mollis nisl quis, convallis nisi. Sed aliquet posuere enim non rutrum. Nunc et mollis velit. In ullamcorper, neque nec blandit viverra, turpis urna tempor ex, sed rutrum ipsum lectus quis quam. Praesent quam elit, porttitor sed nibh sed, gravida lacinia nibh.</p>
-              <a href="contact.html" class="btn btn-primary">Contact Us</a>
-            </div>
-          </div>
-
+<div class="row">
+  <div class="col-lg-12">
+    <h2>Services</h2>
+    <div ng-repeat="service in services">
+      <div class="row service">
+        <div class="col-md-2">
+          <img src={{service.image}}>
+        </div>
+        <div class="col-md-10">
+          <h3>{{service.name}}</h3>
+          <p>{{service.description}}</p>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
         </div>
       </div>
-
-      <!-- Site footer -->
-      <footer class="footer">
-        <p>&copy; 2015 Company, Inc.</p>
-      </footer>
-    </div> <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
-</html>
+    </div>
+  </div>
+</div>

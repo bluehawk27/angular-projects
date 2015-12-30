@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Lynn Location",
+    "street": "333 Walnut St",
+    "city": "Lynn",
+    "state": "MA",
+    "zip": "10294",
+    "phone": "555-204-1455"
+  },
+  {
+    "id": 2,
+    "name": "SF Location",
+    "street": "333 Mission St",
+    "city": "SF",
+    "state": "CA",
+    "zip": "10294",
+    "phone": "545-254-1455"
+  },
+  {
+    "id": 3,
+    "name": "LA Location",
+    "street": "333 Cherry St",
+    "city": "LA",
+    "state": "CA",
+    "zip": "54294",
+    "phone": "555-777-8855"
+  }
+]

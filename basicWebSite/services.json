@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "hardware Repair",
+    "description": "blah blah blah giggidie",
+    "image": "https://angularjs.org/img/AngularJS-large.png"
+  },
+  {
+    "id": 2,
+    "name": "Virus Removal",
+    "description": "blah blah blah giggidie2",
+    "image": "https://angularjs.org/img/AngularJS-large.png"
+  },
+  {
+    "id": 3,
+    "name": "System tune up",
+    "description": "blah blah blah giggidie3",
+    "image": "https://angularjs.org/img/AngularJS-large.png"
+  }
+]
